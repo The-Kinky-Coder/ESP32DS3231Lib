@@ -1,0 +1,51 @@
+# PlatformIO (ignore .pio and .pio/libdeps everywhere)
+**/.pio/
+**/.pioenvs/
+**/.piolibdeps/
+**/.pytest_cache/
+**/.sconsign.dblite
+**/.DS_Store
+/.vscode/
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.orig
+*.bin
+*.elf
+*.map
+*.dmp
+*.d
+*.exe
+*.out
+*.a
+*.o
+*.obj
+*.gcda
+*.gcno
+*.gcov
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# PlatformIO test results
+/test/.pioenvs/
+/test/.piolibdeps/
+
+# Arduino
+*.hex
+*.eep
+*.ino.cpp
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~

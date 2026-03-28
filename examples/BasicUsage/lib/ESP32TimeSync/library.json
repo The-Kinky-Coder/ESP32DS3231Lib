@@ -1,0 +1,14 @@
+{
+  "name": "ESP32TimeSync",
+  "version": "0.0.0",
+  "dependencies": [
+    {
+      "name": "DS3231",
+      "owner": "northernwidget",
+      "version": "^1.1.0"
+    }
+  ],
+  "build": {
+    "libCompatMode": 2
+  }
+}
