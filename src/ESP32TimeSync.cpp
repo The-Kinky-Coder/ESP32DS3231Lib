@@ -120,6 +120,11 @@ void ESP32TimeSync::setDebug(bool enable) {
     _debug = enable;
 }
 
+void ESP32TimeSync::registerNtpCallback() {
+    sntp_set_time_sync_notification_cb(&ESP32TimeSync::handleNtpSync);
+    _ntpEnabled = true;
+}
+
 void ESP32TimeSync::update() {
     bool handleNtp = false;
     portENTER_CRITICAL(&_lock);

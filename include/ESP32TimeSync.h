@@ -48,6 +48,11 @@ public:
     void setSyncInterval(unsigned long minutes);
     void setDebug(bool enable);
 
+    // Register the SNTP notification callback so that NTP syncs started via
+    // configTzTime() / configTime() (rather than enableNTP()) will still
+    // trigger a DS3231 write and mark isNTPSynced() = true.
+    void registerNtpCallback();
+
     void update();
 
 private:

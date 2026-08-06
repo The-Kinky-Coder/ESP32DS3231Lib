@@ -1,0 +1,4 @@
+# Normalise all text files to LF in the repository and on checkout.
+# Without this, Windows editors reintroduce CRLF and every file shows as
+# modified even when its content is unchanged.
+* text=auto eol=lf
